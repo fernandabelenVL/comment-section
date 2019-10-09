@@ -1,7 +1,8 @@
 {
   "name": "comment-section",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
+  "homepage": " https://fernandabelenvl.github.io/comment-section/",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
     "react": "^16.10.2",
@@ -11,6 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -28,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
